@@ -1,0 +1,50 @@
+CLI Version = 007.2508.0000.0000 Feb 27, 2023
+Status = Success
+
+FW Package Build = 52.16.1-4405
+BIOS Version = 7.16.00.0_0x07100501
+FW Version = 5.160.02-3552
+
+Current Personality = RAID-Mode 
+Host Interface = PCI-E
+Device Interface = NVMe
+
+Drive Groups = 1
+
+TOPOLOGY :
+========
+
+-----------------------------------------------------------------------------
+DG Arr Row EID:Slot DID Type  State BT       Size PDC  PI SED DS3  FSpace TR 
+-----------------------------------------------------------------------------
+ 0 -   -   -        -   RAID0 Optl  N   42.855 TB -    N  N   -    N      N  
+ 0 0   -   -        -   RAID0 Optl  N   42.855 TB -    N  N   -    N      N  
+ 0 0   0   -        -   DRIVE Onln  -   14.285 TB -    N  N   -    -      N  
+ 0 0   1   -        -   DRIVE Onln  -   14.285 TB -    N  N   -    -      N  
+ 0 0   2   -        -   DRIVE Onln  -   14.285 TB -    N  N   -    -      N  
+-----------------------------------------------------------------------------
+
+Virtual Drives = 1
+
+VD LIST :
+=======
+
+-------------------------------------------------------------
+DG/VD TYPE  State Access Consist Cache Cac sCC     Size Name 
+-------------------------------------------------------------
+0/0   RAID0 Optl  RW     Yes     RWBD  -   ON      42.855 TB      
+-------------------------------------------------------------
+
+Physical Drives = 3
+
+PD LIST :
+=======
+
+-------------------------------------------------------------------
+EID:Slt DID State  DG       Size Intf Med SED PI SeSz Model Sp Type 
+-------------------------------------------------------------------
+-        - Onln   -   14.285 TB NVMe  SSD -   N  512B -     U  - 
+-        - Onln   -   14.285 TB NVMe  SSD -   N  512B -     U  - 
+-        - Onln   -   14.285 TB NVMe  SSD -   N  512B -     U  -    
+-------------------------------------------------------------------
+

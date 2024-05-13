@@ -1,0 +1,82 @@
+Generating detailed summary of the adapter, it may take a while to complete.
+
+CLI Version = 007.2508.0000.0000 Feb 27, 2023
+Controller = 0
+Status = Success
+Description = None
+
+SAS Address =  5f4ee08031994000
+PCI Address = 00:17:00:00
+FW Package Build = 52.16.1-4405
+BIOS Version = 7.16.00.0_0x07100501
+FW Version = 5.160.02-3552
+
+Current Personality = RAID-Mode 
+Host Interface = PCI-E
+Device Interface = NVMe
+Security Protocol = None
+
+Drive Groups = 1
+
+TOPOLOGY :
+========
+
+-----------------------------------------------------------------------------
+DG Arr Row EID:Slot DID Type  State BT       Size PDC  PI SED DS3  FSpace TR 
+-----------------------------------------------------------------------------
+ 0 -   -   -        -   RAID5 Dgrd  N    28.57 TB -    N  N   -    N      N  
+ 0 0   -   -        -   RAID5 Dgrd  N    28.57 TB -    N  N   -    N      N  
+ 0 0   0   -        -   DRIVE Onln  -   14.285 TB -    N  N   -    -      N  
+ 0 0   1   -        -   DRIVE Onln  -   14.285 TB -    N  N   -    -      N  
+ 0 0   2   -        -   DRIVE Onln  -   14.285 TB -    N  N   -    -      N  
+-----------------------------------------------------------------------------
+
+DG=Disk Group Index|Arr=Array Index|Row=Row Index|EID=Enclosure Device ID
+DID=Device ID|Type=Drive Type|Onln=Online|Rbld=Rebuild|Optl=Optimal|Dgrd=Degraded
+Pdgd=Partially degraded|Offln=Offline|BT=Background Task Active
+PDC=PD Cache|PI=Protection Info|SED=Self Encrypting Drive|Frgn=Foreign
+DS3=Dimmer Switch 3|dflt=Default|Msng=Missing|FSpace=Free Space Present
+TR=Transport Ready
+
+
+Virtual Drives = 1
+
+VD LIST :
+=======
+
+-------------------------------------------------------------
+DG/VD TYPE  State Access Consist Cache Cac sCC     Size Name 
+-------------------------------------------------------------
+0/0   RAID5 Dgrd  RW     Yes     RWBD  -   ON      28.57 TB      
+-------------------------------------------------------------
+
+VD=Virtual Drive| DG=Drive Group|Rec=Recovery
+Cac=CacheCade|OfLn=OffLine|Pdgd=Partially Degraded|Dgrd=Degraded
+Optl=Optimal|dflt=Default|RO=Read Only|RW=Read Write|HD=Hidden|TRANS=TransportReady
+B=Blocked|Consist=Consistent|R=Read Ahead Always|NR=No Read Ahead|WB=WriteBack
+AWB=Always WriteBack|WT=WriteThrough|C=Cached IO|D=Direct IO|sCC=Scheduled
+Check Consistency
+
+JBOD Drives = 0
+
+Physical Drives = 3
+
+PD LIST :
+=======
+
+-------------------------------------------------------------------
+EID:Slt DID State  DG       Size Intf Med SED PI SeSz Model Sp Type 
+-------------------------------------------------------------------
+-        - Onln   -   14.285 TB NVMe  SSD -   N  512B -     U  - 
+-        - Onln   -   14.285 TB NVMe  SSD -   N  512B -     U  - 
+-        - Onln   -   14.285 TB NVMe  SSD -   N  512B -     U  -    
+-------------------------------------------------------------------
+
+EID=Enclosure Device ID|Slt=Slot No|DID=Device ID|DG=DriveGroup
+DHS=Dedicated Hot Spare|UGood=Unconfigured Good|GHS=Global Hotspare
+UBad=Unconfigured Bad|Sntze=Sanitize|Onln=Online|Offln=Offline|Intf=Interface
+Med=Media Type|SED=Self Encryptive Drive|PI=PI Eligible
+SeSz=Sector Size|Sp=Spun|U=Up|D=Down|T=Transition|F=Foreign
+UGUnsp=UGood Unsupported|UGShld=UGood shielded|HSPShld=Hotspare shielded
+CFShld=Configured shielded|Cpybck=CopyBack|CBShld=Copyback Shielded
+UBUnsp=UBad Unsupported|Rbld=Rebuild

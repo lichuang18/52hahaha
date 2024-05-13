@@ -1,0 +1,16 @@
+NAME                      MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0                       7:0    0  63.9M  1 loop /snap/core20/2264
+loop1                       7:1    0  63.9M  1 loop /snap/core20/2182
+loop2                       7:2    0    87M  1 loop /snap/lxd/27948
+loop3                       7:3    0    87M  1 loop /snap/lxd/28373
+loop4                       7:4    0  39.1M  1 loop /snap/snapd/21184
+loop5                       7:5    0  38.7M  1 loop /snap/snapd/21465
+sda                         8:0    0 372.6G  0 disk 
+├─sda1                      8:1    0     1G  0 part /boot/efi
+├─sda2                      8:2    0     2G  0 part /boot
+└─sda3                      8:3    0 369.6G  0 part 
+  └─ubuntu--vg-ubuntu--lv 253:0    0 369.2G  0 lvm  /
+sdb                         8:16   0 372.6G  0 disk /sas
+sdc                         8:32   0 372.6G  0 disk 
+sdd                         8:48   0 372.6G  0 disk 
+sde                         8:64   0    60T  0 disk 

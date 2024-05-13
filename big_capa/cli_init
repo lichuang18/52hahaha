@@ -1,0 +1,40 @@
+Generating detailed summary of the adapter, it may take a while to complete.
+
+CLI Version = 007.2508.0000.0000 Feb 27, 2023
+Controller = 0
+Status = Success
+Description = None
+
+SAS Address =  5f4ee08031994000
+PCI Address = 00:17:00:00
+FW Package Build = 52.16.1-4405
+BIOS Version = 7.16.00.0_0x07100501
+FW Version = 5.160.02-3552
+
+Current Personality = RAID-Mode 
+Host Interface = PCI-E
+Device Interface = NVMe
+Security Protocol = None
+
+
+Physical Drives = 3
+
+PD LIST :
+=======
+
+-------------------------------------------------------------------
+EID:Slt DID State  DG       Size Intf Med SED PI SeSz Model Sp Type 
+-------------------------------------------------------------------
+-        - UGood   -   14.285 TB NVMe  SSD -   N  512B -     U  - 
+-        - UGood   -   14.285 TB NVMe  SSD -   N  512B -     U  - 
+-        - UGood   -   14.285 TB NVMe  SSD -   N  512B -     U  -   
+-------------------------------------------------------------------
+
+EID=Enclosure Device ID|Slt=Slot No|DID=Device ID|DG=DriveGroup
+DHS=Dedicated Hot Spare|UGood=Unconfigured Good|GHS=Global Hotspare
+UBad=Unconfigured Bad|Sntze=Sanitize|Onln=Online|Offln=Offline|Intf=Interface
+Med=Media Type|SED=Self Encryptive Drive|PI=PI Eligible
+SeSz=Sector Size|Sp=Spun|U=Up|D=Down|T=Transition|F=Foreign
+UGUnsp=UGood Unsupported|UGShld=UGood shielded|HSPShld=Hotspare shielded
+CFShld=Configured shielded|Cpybck=CopyBack|CBShld=Copyback Shielded
+UBUnsp=UBad Unsupported|Rbld=Rebuild
